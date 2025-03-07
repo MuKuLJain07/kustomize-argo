@@ -8,4 +8,4 @@ spec:
     spec:
       containers:
         - name: my-app
-          image: nginx:prod
+          # image: nginx:prod
