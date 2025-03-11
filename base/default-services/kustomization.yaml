@@ -2,11 +2,30 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 resources:
-  - kube-state-metrics/deployment.yaml
-  - kube-state-metrics/service.yaml
+  # - kube-state-metrics/deployment.yaml
+  # - kube-state-metrics/service.yaml
   - cluster-autoscaler/deployment.yaml
 
 commonLabels:
   app: my-app
 
 namePrefix: default-
+
+
+# helmGlobals:
+#   chartHome: charts
+#   configHome: config
+
+# helmCharts:
+# - name: kube-state-metrics
+#   repo: https://charts.bitnami.com/bitnami
+#   version: 5.0.4  
+#   releaseName: kube-state-metrics
+#   namespace: kube-system
+#   valuesInline:
+#     replicaCount: 1
+#     metrics:
+#       enabled: true
+#     service:
+#       type: ClusterIP
+#       port: 8080
