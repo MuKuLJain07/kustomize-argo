@@ -6,7 +6,7 @@ resources:
   - kube-state-metrics/service.yaml
   - nginx/nginx/templates/deployment.yaml
   - nginx/nginx/templates/svc.yaml
-  - nginx/nginx/templates/nginx-serviceaccount.yaml
+  - nginx/nginx/templates/serviceaccount.yaml
 
 commonLabels:
   app: my-app
