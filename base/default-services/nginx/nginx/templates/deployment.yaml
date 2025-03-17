@@ -33,7 +33,7 @@ spec:
     spec:
       
       shareProcessNamespace: false
-      serviceAccountName: nginx
+      {% comment %} serviceAccountName: nginx {% endcomment %}
       automountServiceAccountToken: false
       affinity:
         podAffinity:
