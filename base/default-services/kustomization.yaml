@@ -4,7 +4,8 @@ kind: Kustomization
 resources:
   - kube-state-metrics/deployment.yaml
   - kube-state-metrics/service.yaml
-  - nginx/deployment.yaml
+  - nginx/nginx/templates/deployment.yaml
+  - nginx/nginx/templates/svc.yaml
 
 commonLabels:
   app: my-app
