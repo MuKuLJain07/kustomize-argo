@@ -5,6 +5,7 @@ resources:
   - kube-state-metrics/deployment.yaml
   - kube-state-metrics/service.yaml
   # - cluster-autoscaler/deployment.yaml
+  - nginx
 
 commonLabels:
   app: my-app
